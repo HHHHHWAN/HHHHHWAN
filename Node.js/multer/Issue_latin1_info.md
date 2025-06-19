@@ -39,9 +39,13 @@ Q. Node.js는 왜 `latin1` 방식으로 인코딩하게 되었는지.
     -   Node.js에게 이렇게 말하는 것과 같습니다. "여기 `í•œê¸€` 라는 깨진 문자열이 있는데, **이게 원래 `latin1` 규칙으로 만들어진 결과물이야.**"
     -   Node.js는 이 말을 듣고 `í•œê¸€` 문자열을 다시 원래의 바이트 배열인 **`ed 95 9c ea b8 80`** 으로 복원합니다. (잘못된 해석 과정을 거꾸로 되돌리는 것입니다.)
 
+    ![Image](https://github.com/user-attachments/assets/9b76c0b3-8c24-46cb-9435-e75d33b84102)
+
 -   **`.toString('utf8')`**:
     -   이제 올바르게 복원된 바이트 배열 `ed 95 9c ea b8 80`을 가지고 Node.js에게 다시 말합니다. "**이 바이트 배열을 이번에는 `UTF-8` 규칙으로 해석해 줘.**"
     -   Node.js는 이 바이트들을 UTF-8 규칙에 따라 조합하여 마침내 우리가 원했던 "**한글**"이라는 원래의 문자열을 얻어냅니다.
+
+    ![Image](https://github.com/user-attachments/assets/f65d0bc5-b0c8-4bfb-8319-1e0ad00621cb)
 
 ### 요약
 
