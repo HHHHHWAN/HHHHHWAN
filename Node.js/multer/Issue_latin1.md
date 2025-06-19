@@ -3,7 +3,7 @@
 
 - **헤더 정보를 `latin1`로 인코딩하여, 출력이 하기 때문**
 
-    [ 설명 (chatGPT)](https://github.com/HHHHHWAN/HHHHHWAN/blob/master/Node.js/multer/%EC%99%9C%20%EB%9D%BC%ED%8B%B4%EB%B0%A9%EC%8B%9D%EC%9D%B4%20%EA%B8%B0%EB%B3%B8%EC%9D%B8%20%EA%B2%83%EC%9D%BC%EA%B9%8C.md)
+    [ 설명 (chatGPT)](https://github.com/HHHHHWAN/HHHHHWAN/blob/fb71db5c306963cd9906c7cce674e834a566d9d6/Node.js/multer/Issue_latin1_info.md)
 
 
 `multer`를 통해, 저장된 req.file.originalname을 다시 <br>
